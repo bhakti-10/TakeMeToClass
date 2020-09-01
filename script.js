@@ -21,6 +21,13 @@ function disableButton() {
     document.getElementById("join-button-1").disabled = "True"
 }
 
+function throwEmote() {
+    var emojis = Array("🤩", "😎", "😴", "🔥", "🤓", "💯", "💩", "🐤", "🙏", "🥱", "😬", "🥳", "🌚");
+
+    var item = emojis[Math.floor(Math.random() * emojis.length)];
+    return item;
+}
+
 function fetch() {
     var linkText1 = null;
     var linkText2 = null;
@@ -31,7 +38,7 @@ function fetch() {
     var min = todayDate.getMinutes();
     switch (day) {
         case 0:
-            lectureText = "There is no lecture today";
+            lectureText = "There is no lecture today"+throwEmote();
             break;
         case 1:
             if (hour < 10) {
@@ -56,7 +63,7 @@ function fetch() {
                 linkText1 = "https://meet.google.com/lookup/ejtpp6fr4u"
                 linkText2 = "https://meet.google.com/lookup/fkyod2kmoo"
             } else {
-                lectureText = "No more lectures today ☺"
+                lectureText = "No more lectures today "+throwEmote()
             }
             break;
         case 2:
@@ -80,7 +87,7 @@ function fetch() {
                 linkText1 = "https://meet.google.com/lookup/b6fekmm4me"
                 linkText2 = "https://meet.google.com/lookup/hq456cujmd"
             } else {
-                lectureText = "No more lectures today ☺"
+                lectureText ="No more lectures today "+throwEmote()
             }
             break;
         case 3:
@@ -103,7 +110,7 @@ function fetch() {
                 lectureText = "HPC started at 2:15PM"
                 linkText1 = "https://meet.google.com/lookup/awoaq6g6xh"
             } else {
-                lectureText = "No more lectures today ☺"
+                lectureText = "No more lectures today "+throwEmote()
             }
             break;
         case 4:
@@ -122,7 +129,7 @@ function fetch() {
                 linkText1 = "https://meet.google.com/lookup/b6fekmm4me"
                 linkText2 = "https://meet.google.com/lookup/hq456cujmd"
             } else {
-                lectureText = "No more lectures today ☺"
+                lectureText ="No more lectures today "+throwEmote()
             }
             break;
         case 5:
@@ -146,7 +153,7 @@ function fetch() {
                 linkText1 = "https://meet.google.com/lookup/ejtpp6fr4u"
                 linkText2 = "https://meet.google.com/lookup/fkyod2kmoo"
             } else {
-                lectureText = "No more lectures today ☺"
+                lectureText = "No more lectures today "+throwEmote()
             }
             break;
         case 6:
@@ -161,8 +168,7 @@ function fetch() {
                 lectureText = "DIV-A LP-1(P) started at 1PM"
                 linkText1 = "https://meet.google.com/lookup/cupjcgl7il"
             } else {
-                lectureText = "No more lectures today ☺"
-            }
+                lectureText = "No more lectures today "+throwEmote()            }
 
     }
     setLecture(lectureText, linkText1, linkText2)
