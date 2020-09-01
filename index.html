@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Slabo+27px&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
-<body style="font-family: 'Roboto Slab', serif;">
+<body style="font-family: 'Roboto Slab', serif;" onload="fetch()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">TakeMeToClass</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -34,14 +35,16 @@
     <div class="content">
         <center>
             <h3> Hi,</h3>
-            <h3> DA Lecture started at 1PM </h3>
+            <h3 id="lecture"> </h3>
             <br>
             <br>
             <br>
-            <button type="button" class="btn btn-dark">
-                <a href="https://meet.google.com/lookup/gpcqol4zmn" target="new"
-                    style="color:white; padding:100px;">Join</a>
+            <button type="button" class="btn btn-dark" id="join-button-1" >
+                <a id = "link-text-1" href="#" target="new" style="color:white; padding:100px;">Join</a>
             </button>
+            <br>
+            <br>
+            <div id="paid-hacks"></div>
         </center>
     </div>
 
