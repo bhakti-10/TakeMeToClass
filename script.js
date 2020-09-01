@@ -1,10 +1,8 @@
 function setLecture(lectureText, linkText1, linkText2) {
-    console.log(linkText1, linkText2)
     document.getElementById("lecture").innerHTML = lectureText
     if (linkText1 == null) {
         disableButton()
     } else {
-        console.log("going ")
         document.getElementById("link-text-1").href = linkText1
 
     }
