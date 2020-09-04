@@ -11,6 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Slabo+27px&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <script src="https://use.fontawesome.com/eca55393ed.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177265540-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177265540-1');
+    </script>
+
 </head>
 
 <body style="font-family: 'Roboto Slab', serif;" onload="fetch()">
@@ -40,8 +53,8 @@
             <br>
             <br>
             <br>
-            <button type="button" class="btn btn-dark" id="join-button-1" >
-                <a id = "link-text-1" href="#" target="new" style="color:white; padding:20px 100px 20px 100px;">Join</a>
+            <button type="button" class="btn btn-dark" id="join-button-1">
+                <a id="link-text-1" href="#" target="new" style="color:white; padding:20px 100px 20px 100px;">Join</a>
             </button>
             <br>
             <br>
@@ -50,8 +63,9 @@
     </div>
 
     <a href="#" onclick="fetch()" class="float">
-        <img src="https://www.pngkey.com/png/full/204-2048039_refresh-icon-white-refresh-icon-png.png" style="width:25px; height:25px; margin-top:17px">
-        </a>    
+        <img src="https://www.pngkey.com/png/full/204-2048039_refresh-icon-white-refresh-icon-png.png"
+            style="width:25px; height:25px; margin-top:17px">
+    </a>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
