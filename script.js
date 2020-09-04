@@ -7,9 +7,10 @@ function setLecture(lectureText, linkText1, linkText2) {
 
     }
     if (linkText2 != null) {
-        document.getElementById("paid-hacks").innerHTML = '<button type="button" class="btn btn-dark" id="join-button-2"><a id = "link-text-2" href="#" target="new" style="color:white; padding:100px;">Join Link 2</a></button>'
+        document.getElementById("paid-hacks").innerHTML = '<button type="button" class="btn btn-dark" id="join-button-2"><a id = "link-text-2" href="#" target="new" style="color:white; padding:20px 100px 20px 100px;">Join Link 2</a></button>'
         document.getElementById("link-text-2").href = linkText2
         document.getElementById("link-text-1").innerHTML = "Join Link 1"
+        document.getElementById("link-text-1").href = linkText1
     }
 
 }
@@ -56,7 +57,7 @@ function fetch() {
                 linkText2 = "https://meet.google.com/lookup/hq456cujmd"
             } else if ((hour == 14 && min < 15)) {
                 lectureText = "DIV-A LP-2(P) starting at 2:15PM"
-            } else if ((hour == 14 && min > 15) || (hour == 15) || (hour == 16 && min < 15)) {
+            } else if ((hour == 14 && min >= 15) || (hour == 15) || (hour == 16 && min < 15)) {
                 lectureText = "DIV-A LP-2(P) started at 2:15PM"
                 linkText1 = "https://meet.google.com/lookup/ejtpp6fr4u"
                 linkText2 = "https://meet.google.com/lookup/fkyod2kmoo"
@@ -80,7 +81,7 @@ function fetch() {
                 linkText1 = " https://meet.google.com/lookup/dj7x2ddxdm"
             } else if ((hour == 14 && min < 15)) {
                 lectureText = "E-1 starting at 2:15PM"
-            } else if ((hour == 14 && min > 15) || (hour == 15 && min < 15)) {
+            } else if ((hour == 14 && min >= 15) || (hour == 15 && min < 15)) {
                 lectureText = "E-1 started at 2:15PM"
                 linkText1 = "https://meet.google.com/lookup/b6fekmm4me"
                 linkText2 = "https://meet.google.com/lookup/hq456cujmd"
@@ -104,7 +105,7 @@ function fetch() {
                 linkText1 = " https://meet.google.com/lookup/dj7x2ddxdm"
             } else if ((hour == 14 && min < 15)) {
                 lectureText = "HPC starting at 2:15PM"
-            } else if ((hour == 14 && min > 15) || (hour == 15 && min < 15)) {
+            } else if ((hour == 14 && min >= 15) || (hour == 15 && min < 15)) {
                 lectureText = "HPC started at 2:15PM"
                 linkText1 = "https://meet.google.com/lookup/awoaq6g6xh"
             } else {
@@ -146,7 +147,7 @@ function fetch() {
                 linkText1 = "https://meet.google.com/lookup/gpcqol4zmn"
             } else if ((hour == 14 && min < 15)) {
                 lectureText = "DIV-B LP-2(P) starting at 2:15PM"
-            } else if ((hour == 14 && min > 15) || (hour == 15) || (hour == 16 && min < 15)) {
+            } else if ((hour == 14 && min >= 15) || (hour == 15) || (hour == 16 && min < 15)) {
                 lectureText = "DIV-B LP-2(P) started at 2:15PM"
                 linkText1 = "https://meet.google.com/lookup/ejtpp6fr4u"
                 linkText2 = "https://meet.google.com/lookup/fkyod2kmoo"
