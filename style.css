@@ -24,3 +24,168 @@ body {
 .my-float{
 	margin-top:22px;
 }
+
+
+
+ 
+  
+  .box {
+	width: 40%;
+	margin: 0 auto;
+	background: rgba(255,255,255,0.2);
+	padding: 35px;
+	border: 2px solid #fff;
+	border-radius: 20px/50px;
+	background-clip: padding-box;
+	text-align: center;
+  }
+  
+  .overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity .5s;
+	visibility: hidden;
+	opacity: 0;
+  }
+  .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 1s ease-in-out;
+  }
+  
+  .popup .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	transition: all 200ms;
+	font-size: 22px;
+	text-decoration: none;
+	color: #333;
+  }
+  .popup .close:hover {
+	color: #343A40;
+  }
+  .popup .content {
+	max-height: 30%;
+	overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+	.box{
+	  width: 70%;
+	}
+	.popup{
+	  width: 70%;
+	}
+  }
+
+  .popup-heading{
+	  text-align: center;
+  }
+
+  .content{
+	  text-align:center;
+  }
+
+  .social{
+	  text-align:center;
+	 
+	  text-decoration: none;
+  }
+
+  .social-buttons{
+	  text-decoration: none;
+	  background-color: #333;
+	  padding: 5px 10px;
+	  border-radius: 5px;
+	  color: #e6e6e6;
+	  transition: .2s;
+  }
+
+  .ld:hover{
+	color:#0e76a8;
+	border-color: #333;
+	background-color: #e6e6e6;
+  }
+
+  .gh:hover{
+	  color: #333;
+	  border-color: #333;
+	background-color: #e6e6e6;
+  }
+
+  .panda{
+	height: 100px;
+	width: 100px;
+	-webkit-animation: breathing 8s ease-out infinite normal;
+	animation: breathing 8s ease-out infinite normal;
+	-webkit-font-smoothing: antialiased;
+  }
+
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  75% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+	0% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	  }
+	
+	  25% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	  }
+	
+	  50% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	  }
+	
+	  75% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	  }
+	
+	  100% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	  }
+}

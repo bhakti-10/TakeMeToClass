@@ -10,7 +10,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Slabo+27px&display=swap" rel="stylesheet">
     <script src="script.js"></script>
-    <script src="https://use.fontawesome.com/eca55393ed.js"></script>
+    <script src="https://kit.fontawesome.com/84643f8cc6.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177265540-1"></script>
     <script>
@@ -40,7 +40,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#popup1">About</a>
                 </li>
             </ul>
         </div>
@@ -61,9 +61,29 @@
             <div id="paid-hacks"></div>
         </center>
     </div>
+    <!--Greeting Popup-->
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2 class="popup-heading">Hello There!</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img src="panda.png" alt="" class="panda">
+                <br>
+                <br><b>I'm Bhakti.</b><br>
+                <br>Automatic Lecture timings for Lazy Me.<br>
+                <small> Built with bootstrap and Vanilla JS</small>
+            </div>
+            <div class="social">
+                <a href="https://github.com/bhakti-10" class="social-buttons gh"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bhakti-gosavi-2a99121b3/" class="social-buttons ld"><i
+                        class="fab fa-linkedin-in "></i></a>
+            </div>
+        </div>
+    </div>
 
     <a href="#" onclick="fetch()" class="float">
-        <img src="https://www.pngkey.com/png/full/204-2048039_refresh-icon-white-refresh-icon-png.png"
+        <img class="refresh" src="https://www.pngkey.com/png/full/204-2048039_refresh-icon-white-refresh-icon-png.png"
             style="width:25px; height:25px; margin-top:17px">
     </a>
 
