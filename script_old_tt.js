@@ -49,6 +49,18 @@ function fetch() {
                 lectureText = "LP-2 Lecture started at " + hour + "AM"
                 linkText1 = "https://meet.google.com/lookup/ejtpp6fr4u"
                 linkText2 = "https://meet.google.com/lookup/fkyod2kmoo"
+            } else if (hour >= 12 && hour < 13) {
+                lectureText = "E-1 Lecture starting at 1PM"
+            } else if (hour >= 13 && hour < 14) {
+                lectureText = "E-1 Lecture started at " + (hour - 12) + "PM"
+                linkText1 = "https://meet.google.com/lookup/b6fekmm4me"
+                linkText2 = "https://meet.google.com/lookup/hq456cujmd"
+            } else if ((hour == 14 && min < 15)) {
+                lectureText = "DIV-A LP-2(P) starting at 2:15PM"
+            } else if ((hour == 14 && min >= 15) || (hour == 15) || (hour == 16 && min < 15)) {
+                lectureText = "DIV-A LP-2(P) started at 2:15PM"
+                linkText1 = "https://meet.google.com/lookup/ejtpp6fr4u"
+                linkText2 = "https://meet.google.com/lookup/fkyod2kmoo"
             } else {
                 lectureText = "No more lectures today "+throwEmote()
             }
@@ -62,7 +74,18 @@ function fetch() {
             } else if (hour >= 11 && hour < 12) {
                 lectureText = "HPC Lecture started at " + hour + "AM"
                 linkText1 = "https://meet.google.com/lookup/awoaq6g6xh"
-            }  else {
+            } else if (hour >= 12 && hour < 13) {
+                lectureText = "E-2 Lecture starting at 1PM"
+            } else if (hour >= 13 && hour < 14) {
+                lectureText = "E-2 Lecture started at " + (hour - 12) + "PM"
+                linkText1 = " https://meet.google.com/lookup/dj7x2ddxdm"
+            } else if ((hour == 14 && min < 15)) {
+                lectureText = "E-1 starting at 2:15PM"
+            } else if ((hour == 14 && min >= 15) || (hour == 15 && min < 15)) {
+                lectureText = "E-1 started at 2:15PM"
+                linkText1 = "https://meet.google.com/lookup/b6fekmm4me"
+                linkText2 = "https://meet.google.com/lookup/hq456cujmd"
+            } else {
                 lectureText ="No more lectures today "+throwEmote()
             }
             break;
@@ -75,6 +98,16 @@ function fetch() {
             } else if (hour >= 11 && hour < 12) {
                 lectureText = "DA Lecture started at " + hour + "AM"
                 linkText1 = "https://meet.google.com/lookup/gpcqol4zmn"
+            } else if (hour >= 12 && hour < 13) {
+                lectureText = "E-2 Lecture starting at 1PM"
+            } else if (hour >= 13 && hour < 14) {
+                lectureText = "E-2 Lecture started at " + (hour - 12) + "PM"
+                linkText1 = " https://meet.google.com/lookup/dj7x2ddxdm"
+            } else if ((hour == 14 && min < 15)) {
+                lectureText = "HPC starting at 2:15PM"
+            } else if ((hour == 14 && min >= 15) || (hour == 15 && min < 15)) {
+                lectureText = "HPC started at 2:15PM"
+                linkText1 = "https://meet.google.com/lookup/awoaq6g6xh"
             } else {
                 lectureText = "No more lectures today "+throwEmote()
             }
@@ -88,7 +121,13 @@ function fetch() {
             } else if (hour >= 11 && hour < 12) {
                 lectureText = "DA Lecture started at " + hour + "AM"
                 linkText1 = "https://meet.google.com/lookup/gpcqol4zmn"
-            }  else {
+            } else if (hour >= 12 && hour < 13) {
+                lectureText = "E-1 Lecture starting at 1PM"
+            } else if (hour >= 13 && hour < 14) {
+                lectureText = "E-1 Lecture started at " + (hour - 12) + "PM"
+                linkText1 = "https://meet.google.com/lookup/b6fekmm4me"
+                linkText2 = "https://meet.google.com/lookup/hq456cujmd"
+            } else {
                 lectureText ="No more lectures today "+throwEmote()
             }
             break;
@@ -101,6 +140,17 @@ function fetch() {
             } else if (hour >= 11 && hour < 12) {
                 lectureText = "E-2 Lecture started at " + hour + "AM"
                 linkText1 = " https://meet.google.com/lookup/dj7x2ddxdm"
+            } else if (hour >= 12 && hour < 13) {
+                lectureText = "DA Lecture starting at 1PM"
+            } else if (hour >= 13 && hour < 14) {
+                lectureText = "DA Lecture started at " + (hour - 12) + "PM"
+                linkText1 = "https://meet.google.com/lookup/gpcqol4zmn"
+            } else if ((hour == 14 && min < 15)) {
+                lectureText = "DIV-B LP-2(P) starting at 2:15PM"
+            } else if ((hour == 14 && min >= 15) || (hour == 15) || (hour == 16 && min < 15)) {
+                lectureText = "DIV-B LP-2(P) started at 2:15PM"
+                linkText1 = "https://meet.google.com/lookup/ejtpp6fr4u"
+                linkText2 = "https://meet.google.com/lookup/fkyod2kmoo"
             } else {
                 lectureText = "No more lectures today "+throwEmote()
             }
@@ -110,6 +160,11 @@ function fetch() {
                 lectureText = "DIV-B LP-1(P) at 10AM"
             } else if (hour >= 10 && hour < 12) {
                 lectureText = "DIV-B LP-1(P) started at 10AM"
+                linkText1 = "https://meet.google.com/lookup/cupjcgl7il"
+            } else if (hour >= 12 && hour < 13) {
+                lectureText = "DIV-A LP-1(P) starting at 1PM"
+            } else if (hour >= 13 && hour < 15) {
+                lectureText = "DIV-A LP-1(P) started at 1PM"
                 linkText1 = "https://meet.google.com/lookup/cupjcgl7il"
             } else {
                 lectureText = "No more lectures today "+throwEmote()            }
