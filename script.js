@@ -45,7 +45,7 @@ function fetch() {
             } else if (hour >= 10 && hour < 11) {
                 lectureText = "LP-1 Lecture started at " + hour + "AM"
                 linkText1 = "https://meet.google.com/vef-dopn-dpa"
-                
+                //As Per New Link
             } else if (hour >= 11 && hour < 12) {
                 lectureText = "LP-2 Lecture started at " + hour + "AM"
                 linkText1 = "https://meet.google.com/lookup/ejtpp6fr4u"
